@@ -54,8 +54,8 @@ def visualize_graph(graph, path=None):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     # Drawing the graph
-    nx.draw(G, pos, with_labels=True, node_color='yellow', node_size=2000,
-            font_size=15, font_weight='bold', edge_color='green', ax=ax)
+    nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=2000,
+            font_size=15, font_weight='bold', edge_color='gray', ax=ax)
     labels = nx.get_edge_attributes(G, 'weight')
     nx.draw_networkx_edge_labels(G, pos, edge_labels=labels, font_size=12, ax=ax)
 
